@@ -130,11 +130,11 @@ gap:30px;
 
 .box{
 
-background:white;
+background:rgb(253, 253, 253);
 
 padding:30px;
 
-border-radius:10px;
+border-radius: 0 30px 0 30px;
 
 box-shadow:0 5px 15px rgba(0,0,0,.15);
 
