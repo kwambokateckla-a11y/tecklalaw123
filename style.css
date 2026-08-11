@@ -266,10 +266,12 @@ color:#C8A75A;
 .practice-card h2{
     color:#0B1F3A;
     margin-bottom:15px;
+    border-radius: 0 30px 0 30px;
 }
 
 .practice-card p{
     line-height:1.8;
+    border-radius: 0 30px 0 30px;
 }
 
 /* for image */
@@ -1819,6 +1821,131 @@ footer p {
 .learn-button:hover {
 
     color: #0B1F3A;
+
+}
+
+
+/* =================================
+   PRACTICE AREAS - PHOTO LAYOUT
+================================= */
+
+.practice-section {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 60px 50px;
+
+    padding: 80px 10%;
+
+    background: white;
+}
+
+
+.practice-item {
+
+    text-align: left;
+
+    background: transparent;
+
+    box-shadow: none;
+
+    border-radius: 0;
+
+}
+
+
+.practice-item img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform .5s ease;
+
+}
+
+
+.practice-item:hover img {
+
+    transform: scale(1.02);
+
+}
+
+
+.practice-item h2 {
+
+    color: #0B1F3A;
+
+    font-size: 28px;
+
+    margin-top: 22px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.practice-item h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 45px;
+
+    height: 2px;
+
+    background: #C8A75A;
+
+    margin-top: 10px;
+
+}
+
+
+.practice-item p {
+
+    color: #555;
+
+    line-height: 1.8;
+
+    max-width: 550px;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .practice-section {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 60px 7%;
+
+    }
+
+
+    .practice-item img {
+
+        height: 250px;
+
+    }
+
+
+    .practice-item h2 {
+
+        font-size: 25px;
+
+    }
 
 }
 
