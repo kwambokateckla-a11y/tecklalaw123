@@ -1012,6 +1012,7 @@ footer {
     background: #0B1F3A;
 
     color: white;
+    width: 97vw;
 
     text-align: center;
 
@@ -1832,12 +1833,14 @@ footer p {
 .practice-section {
 
     display: grid;
+    width: 80VW;
 
+    margin:20px ;
     grid-template-columns: repeat(2, 1fr);
 
     gap: 60px 50px;
 
-    padding: 80px 10%;
+    padding: 60px 10%;
 
     background: white;
 }
